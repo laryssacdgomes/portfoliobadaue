@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Laryssa Gomes — Portfólio editorial</title>
+<meta name="description" content="Textos publicados por Laryssa Gomes: entrevistas, perfis e conteúdo editorial com qualidade, versatilidade e voz autoral.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0a;--fg:#f4f1ea;--mut:#a29d93;--line:#27241f;--card:#131210;--ac:#ff5a3c;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--bg)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Space Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.w{max-width:1080px;margin:0 auto;padding:0 clamp(18px,5vw,40px)}
+.hero{padding:clamp(56px,12vw,120px) 0 clamp(36px,6vw,64px)}
+.eyebrow{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ac);font-weight:700}
+h1{font-size:clamp(2.8rem,10.5vw,7rem);line-height:.95;letter-spacing:-.04em;margin:.25em 0 .3em;font-weight:700}
+h1 span{color:var(--ac)}
+.lead{max-width:640px;font-size:clamp(1.05rem,2.4vw,1.3rem);color:var(--mut);margin:0}
+.stats{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
+.stats b{display:block;font-size:2rem;letter-spacing:-.03em}
+.stats small{color:var(--mut);font-size:.85rem}
+section{padding:clamp(36px,7vw,72px) 0}
+h2{font-size:clamp(1.6rem,4vw,2.4rem);letter-spacing:-.03em;margin:0 0 8px}
+.sub{color:var(--mut);margin:0 0 28px;max-width:620px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chip{font:inherit;font-size:.9rem;color:var(--fg);background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ac);border-color:var(--ac);color:#0a0a0a;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:16px}
+.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;text-decoration:none;transition:border-color .2s,transform .2s}
+.card:hover,.card:focus-visible{border-color:var(--ac);transform:translateY(-3px);outline:none}
+.meta{display:flex;justify-content:space-between;gap:12px;font-size:.78rem;color:var(--mut);letter-spacing:.06em;text-transform:uppercase}
+.meta em{font-style:normal;color:var(--ac);font-weight:700}
+.card h3{font-size:1.2rem;line-height:1.25;letter-spacing:-.015em;margin:14px 0 10px}
+.card p{color:var(--mut);font-size:.95rem;margin:0 0 18px}
+.go{margin-top:auto;font-weight:700;font-size:.9rem}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:28px}
+.cols div{border-top:2px solid var(--ac);padding-top:14px}
+.cols h4{margin:0 0 6px;font-size:1.05rem}
+.cols p{margin:0;color:var(--mut);font-size:.93rem}
+.path{list-style:none;padding:0;margin:0}
+.path li{display:flex;flex-wrap:wrap;gap:6px 24px;padding:16px 0;border-bottom:1px solid var(--line)}
+.path b{min-width:150px}
+.path span{color:var(--mut);flex:1 1 260px}
+.btn{display:inline-block;margin-top:28px;padding:14px 24px;border-radius:999px;background:var(--ac);color:#0a0a0a;font-weight:700;text-decoration:none}
+footer{padding:40px 0 56px;border-top:1px solid var(--line);color:var(--mut);font-size:.9rem}
+footer .w{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+</style>
+</head>
+<body>
+<header class="hero"><div class="w">
+<div class="eyebrow">Portfólio editorial · Rio de Janeiro</div>
+<h1>Laryssa<br><span>Gomes</span></h1>
+<p class="lead">Jornalista e profissional de comunicação. Textos publicados que unem escuta atenta, clareza de apuração e voz autoral, de entrevistas literárias a temas sociais e de educação.</p>
+<div class="stats">
+<div><b>10</b><small>textos em destaque</small></div>
+<div><b>4</b><small>frentes temáticas</small></div>
+<div><b>2025–26</b><small>publicações no blog da Autografia</small></div>
+</div>
+</div></header>
+
+<main>
+<section id="textos"><div class="w">
+<h2>Textos selecionados</h2>
+<p class="sub">Entrevistas e perfis publicados no blog da Editora Autografia. Cada card leva ao texto original.</p>
+<div class="chips" id="chips" role="group" aria-label="Filtrar por tema"></div>
+<div class="grid" id="grid"></div>
+<div style="display:flex;flex-wrap:wrap;gap:0 10px"><a class="btn" href="https://blog.autografia.com.br/author/laryssa/" target="_blank" rel="noopener">Ver todos no blog da Autografia ↗</a><a class="btn" href="https://inmagazine.ig.com.br/autor/laryssa-gomes" target="_blank" rel="noopener">Ver textos no InMagazine ↗</a></div>
+</div></section>
+
+<section><div class="w">
+<h2>O que esses textos mostram</h2>
+<p class="sub">Características que se repetem ao longo das publicações.</p>
+<div class="cols">
+<div><h4>Voz do entrevistado em primeiro plano</h4><p>Trajetória, motivação e processo criativo organizados em narrativa fluida, sem perder a fala de quem conta a história.</p></div>
+<div><h4>Versatilidade de repertório</h4><p>Fantasia infantojuvenil, poesia, memórias, segurança pública, educação, finanças e bem-estar na mesma linha editorial.</p></div>
+<div><h4>Temas sensíveis com cuidado</h4><p>Violência doméstica, superação e recomeço abordados com respeito e foco em informação e acolhimento.</p></div>
+<div><h4>Texto que também divulga</h4><p>Estrutura de matéria com ponto de partida claro, contexto e chamada final para conhecer a obra.</p></div>
+</div>
+</div></section>
+
+<section><div class="w">
+<h2>Trajetória editorial</h2>
+<ul class="path">
+<li><b>Blog da Autografia</b><span>Entrevistas e perfis de autores publicados pela editora (2025–2026).</span></li>
+<li><b>InMagazine · Portal R7</b><span>Redação de matérias para o site durante estágio em 2021. <a href="https://inmagazine.ig.com.br/autor/laryssa-gomes" target="_blank" rel="noopener">Ver textos ↗</a></span></li>
+<li><b>Formação</b><span>Jornalismo pela UniCarioca; experiência em editoras como Alta Books, Autografia e GEN.</span></li>
+</ul>
+</div></section>
+</main>
+
+<footer><div class="w">
+<span>© Laryssa Gomes · Jornalista</span>
+<a href="https://www.linkedin.com/in/laryssagomes/" target="_blank" rel="noopener">LinkedIn ↗</a>
+</div></footer>
+
+<script>
+var P=[
+["Muito além da gramática: a proposta por trás do Método de Angelis","14 set 2026","Educação e bem-estar","Entrevista com a professora Paola De Angelis sobre o método de inglês criado em sala de aula e agora transformado em livro de gramática essencial.","https://blog.autografia.com.br/muito-alem-da-gramatica-a-proposta-por-tras-do-metodo-de-angelis/"],
+["Quando a consciência desperta: Datiary Santos compartilha sua história em livro","8 jan 2026","Educação e bem-estar","Perfil e entrevista com uma autora que uniu a vivência na área comercial a um processo de autoconhecimento e o levou para as páginas de um livro.","https://blog.autografia.com.br/quando-a-consciencia-desperta-datiary-santos-compartilha-sua-historia-em-livro/"],
+["Autor reúne experiência em gestão de crises para analisar ameaças contemporâneas","16 dez 2025","Não ficção","Conversa com um especialista em segurança e inteligência sobre uma obra que analisa terrorismo, crime organizado e crimes financeiros.","https://blog.autografia.com.br/autor-reune-experiencia-em-gestao-de-crises-para-analisar-ameacas-contemporaneas/"],
+["“Memórias de um Passado”: um retrato sensível sobre dor, coragem e renascimento","24 nov 2025","Literatura","Entrevista com Nanda Raupp sobre o livro de estreia, uma narrativa que coloca resistência e recomeço no centro.","https://blog.autografia.com.br/memorias-de-um-passado-um-retrato-sensivel-sobre-dor-coragem-e-renascimento/"],
+["Novo volume de Guardiões dos Casulos é lançado; autora detalha escrita e inspirações","18 nov 2025","Literatura","Bate-papo com Patrícia Oliveira sobre a sequência de sua fantasia infantojuvenil e os temas da transição para a adolescência.","https://blog.autografia.com.br/novo-volume-de-guardioes-dos-casulos-e-lancado-autora-detalha-escrita-e-inspiracoes/"],
+["“Violência não é destino”: obra de Vinicius Dutra Gonçalves busca conscientizar e encorajar mulheres a romper o ciclo do abuso","4 set 2025","Não ficção","Entrevista com um investigador da Polícia Civil sobre o manual que une orientação jurídica prática e acolhimento a mulheres em situação de violência.","https://blog.autografia.com.br/violencia-nao-e-destino-obra-de-vinicius-dutra-goncalves-busca-conscientizar-e-encorajar-mulheres-a-romper-o-ciclo-do-abuso/"],
+["Literatura como acolhimento: Rosângela Galdino e Limeira lança seu primeiro livro infantojuvenil","22 jul 2025","Literatura","Entrevista exclusiva sobre uma estreia inspirada em fatos reais, que fala de superação, empatia e esperança.","https://blog.autografia.com.br/literatura-como-acolhimento-rosangela-galdino-e-limeira-lanca-seu-primeiro-livro-infantojuvenil/"],
+["Entre o real e o fantástico: conheça Páginas de Mistério, obra de estreia de Henrique Sene","1 jul 2025","Literatura","Perfil de um autor que reinterpreta lendas do folclore brasileiro em contos de terror e realismo fantástico.","https://blog.autografia.com.br/entre-o-real-e-o-fantastico-conheca-paginas-de-misterio-obra-de-estreia-de-henrique-sene/"],
+["Fé Empreendedora: um chamado para transformar sonhos em propósito","30 jun 2025","Não ficção","Entrevista com Kleber Campos Garcia sobre um livro que cruza espiritualidade e educação financeira de forma acessível.","https://blog.autografia.com.br/fe-empreendedora-um-chamado-para-transformar-sonhos-em-proposito/"],
+["“Nascido em Tibiriçá”: memórias, história e poesia na estreia literária de Paulo Ednilson","4 jun 2025","Literatura","Perfil de uma autobiografia romanceada que transita entre memória familiar, fatos históricos e prosa poética.","https://blog.autografia.com.br/nascido-em-tibirica-memorias-historia-e-poesia-na-estreia-literaria-de-paulo-ednilson/"]
+];
+var cats=["Todos"].concat(P.map(function(p){return p[2]}).filter(function(c,i,a){return a.indexOf(c)===i}));
+var grid=document.getElementById("grid"),chips=document.getElementById("chips");
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function render(cat){
+grid.innerHTML=P.filter(function(p){return cat==="Todos"||p[2]===cat}).map(function(p){
+return '<a class="card" href="'+p[4]+'" target="_blank" rel="noopener"><div class="meta"><em>'+p[2]+'</em><span>'+p[1]+'</span></div><h3>'+esc(p[0])+'</h3><p>'+esc(p[3])+'</p><span class="go">Ler no blog ↗</span></a>'}).join("");
+chips.querySelectorAll(".chip").forEach(function(b){b.setAttribute("aria-pressed",b.textContent===cat)})}
+cats.forEach(function(c){var b=document.createElement("button");b.className="chip";b.type="button";b.textContent=c;b.onclick=function(){render(c)};chips.appendChild(b)});
+render("Todos");
+</script>
+</body>
+</html>
